@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    final data:<div id="demo"></div>
+</body>
+
+</html>
+
+
+<script>
+
+    const n1 = parseFloat(prompt("Enter first number: "));
+    const n2 = parseFloat(prompt("Enter second number: "));
+    const n3 = parseFloat(prompt("Enter third number: "));
+    let largest;
+
+    if (n1 >= n2 && n1 >= n3) {
+        largest = n1;
+    }
+    else if (n2 >= n1 && n2 >= n3) {
+        largest = n2;
+    }
+    else {
+        largest = n3;
+    }
+
+
+    console.log("The largest number is " + largest);
+    document.getElementById("demo").innerHTML = largest;
+
+</script>

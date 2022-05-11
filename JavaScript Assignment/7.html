@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Events</title>
+    </head>
+    <body>
+        <input type="text" id="one"/><br/>
+        <input type="text" id="two"/><br/>
+        <button onClick="addition()">Add</button>
+        <button onClick="addition()">Subtract</button>
+        <button onClick="addition()">Multiply</button>
+        <button onClick="addition()">Devide</button>
+        <div>Result:<span id="add"></span></div>
+        <div>Result:<span id="Subtract"></span></div>
+        <div>Result:<span id="Multiply"></span></div>
+        <div>Result:<span id="Devide"></span></div>
+    </body>
+    <script>
+        function addition(){
+            var a = document.getElementById("one").value;
+            var b = document.getElementById("two").value;
+            var result1 = Number(a)+Number(b);
+            var a = document.getElementById("one").value;
+            var b = document.getElementById("two").value;
+            var result2 = Number(a)-Number(b);
+            var a = document.getElementById("one").value;
+            var b = document.getElementById("two").value;
+            var result3 = Number(a)*Number(b);
+            var a = document.getElementById("one").value;
+            var b = document.getElementById("two").value;
+            var result4 = Number(a)/Number(b);
+
+            document.getElementById("add").innerHTML = result1;
+            document.getElementById("Subtract").innerHTML = result2;
+            document.getElementById("Multiply").innerHTML = result3;
+            document.getElementById("Devide").innerHTML = result4;
+
+        }
+        console.log("1"+"2");
+    </script>
+</html>

@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    final data:<div id="demo"></div>
+</body>
+
+</html>
+
+
+<script>
+    let x = prompt('Enter the first variable: ');
+    let y = prompt('Enter the second variable: ');
+
+    let T = ([x, y] = [y, x]);
+
+    console.log(`The value of a after swapping: ${x}`);
+    console.log(`The value of b after swapping: ${y}`);
+
+    document.getElementById("demo").innerHTML = T;
+
+</script>

@@ -1,0 +1,27 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    final data:<div id="demo"></div>
+</body>
+
+</html>
+
+<script>
+    const s1 = parseInt(prompt('Enter side1: '));
+    const s2 = parseInt(prompt('Enter side2: '));
+    const s3 = parseInt(prompt('Enter side3: '));
+    const s = (s1 + s2 + s3) / 2;
+    const areaValue = Math.sqrt(
+        s * (s - s1) * (s - s2) * (s - s3)
+    );
+
+    console.log(
+        `The area of the triangle is ${areaValue}`
+    );
+    document.getElementById("demo").innerHTML = areaValue;
+
+</script>
