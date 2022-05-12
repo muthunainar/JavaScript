@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+      
+    </body>
+</html>
+<script>
+var teamSalmanAvg =  (89 + 102 + 103) / 3;
+var teamMikeAvg =  (116 + 94 + 123) / 3;
+var teamMaryAvg =  (97 + 134 + 105) / 3;
+console.log('Salman\'s team Average: ' + teamSalmanAvg + ' \n'  +
+'Mike\'s team Average: ' + teamMikeAvg + ' \n' +
+'Mary\'s team Average: ' + teamMaryAvg
+);
+
+if (teamSalmanAvg > teamMikeAvg  && teamSalmanAvg > teamMaryAvg) {   console.log('Salman\'s team is winning'); }
+else if (teamMikeAvg > teamSalmanAvg && teamMikeAvg > teamMaryAvg) { console.log('Mike\'s team is winning'); }
+else if ( teamMaryAvg > teamSalmanAvg &&  teamMaryAvg > teamMikeAvg) { console.log('Mary\'s team is winning'); }
+else if (teamSalmanAvg === teamMikeAvg  && teamSalmanAvg > teamMaryAvg) {   console.log('Salman\'s team and Mike\'s team  are tied for winning'); }
+else if (teamSalmanAvg === teamMaryAvg && teamSalmanAvg > teamMikeAvg ) {   console.log('Salman\'s team and Mary\'s team  are tied for winning'); }
+else if (teamMikeAvg === teamMaryAvg && teamMaryAvg > teamSalmanAvg ) {   console.log('Mike\'s team and Mary\'s team  are tied for winning'); }
+else { console.log('They are all tied for winning \n\n'); }
+
+console.log('Salman\'s Team Score: ' + teamSalmanAvg + '\n' +
+'Mike\'s Team Score: ' + teamMikeAvg + '\n' +
+'Mary\'s Team Score: ' + teamMaryAvg
+);
+
+    
+</script>
