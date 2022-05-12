@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+      final data:<div id="demo"></div>
+    </body>
+</html>
+
+
+<script>
+var harryMass; var harryHeight; var salmanMass; var salmanHeight; var harryBMI; var salmanBMI;
+harryMass = prompt('What is Harry\'s Mass?' );
+harryHeight = prompt('What is Harry\'s Height?' );
+salmanMass = prompt('What is Salman\'s Mass?' );
+salmanHeight = prompt('What is Salman\'s Height?' );
+
+harryBMI = harryMass / (harryHeight * harryHeight);
+salmanBMI = salmanMass / (salmanHeight * salmanHeight);
+
+var harryBiggerBMI   = harryBMI > salmanBMI;
+
+console.log(harryBMI, salmanBMI);
+
+if(harryBMI > salmanBMI){
+  console.log('Harry\'s BMI is bigger than Salman\'s');
+}
+else {
+  console.log('Salman\'s BMI is bigger than Harry\'s');
+}
+document.getElementById("demo").innerHTML = harryBiggerBMI;
+    
+</script>
