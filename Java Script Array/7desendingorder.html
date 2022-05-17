@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //callback function
+         var result =[33,44,11,33,44,555,11,11,45];
+         var descendingOrder = result.sort(function(x,y){
+             return y-x;
+         });
+         console.log(descendingOrder);
+
+         var result =[11,11,11,33,33,44,44,45,555];
+         var descendingOrder = result.sort(function(o,p){
+             return p-o;
+         });
+         console.log(descendingOrder);
+    </script>
+</body>
+</html>
